@@ -4,57 +4,277 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abidjan Food Menu</title>
+  <meta name="description" content="Le Gourmet Voyageur - Découvrez une expérience culinaire unique inspirée des saveurs du monde.">
+  <meta name="keywords" content="restaurant, cuisine, gourmet, voyage, saveurs, menu, chefs">
+  <meta name="author" content="Le Gourmet Voyageur">
+  <title>Le Gourmet Voyageur - Inspiré par Foodix</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>Abidjan Food Menu</h1>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Le Gourmet Voyageur</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#chefs">Chefs</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Avis</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="voyage.html">Agence de Voyage</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <!-- Entrées -->
-  <h2>Entrées</h2>
-  <ul>
-    <li>
-      <strong>Alloco</strong> - Banane plantain frite servie avec une sauce pimentée et des oignons.
-    </li>
-    <li>
-      <strong>Attiéké</strong> - Semoule de manioc accompagnée de poisson grillé ou de viande, souvent servie avec une sauce tomate épicée.
-    </li>
-    <li>
-      <strong>Salade d'avocat</strong> - Avocat frais, tomates, oignons, et un assaisonnement à base d'huile d'olive et de citron.
-    </li>
-  </ul>
+    <!-- Section Hero -->
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="video-background">
+        <video autoplay muted loop id="hero-video">
+          <source src="assets/videos/Videohero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container text-center text-white">
+        <h1 class="display-4">Bienvenue au Gourmet Voyageur</h1>
+        <p class="lead">Découvrez une expérience culinaire unique inspirée des saveurs du monde.</p>
+        <a href="#menu" class="btn btn-primary btn-lg">Voir le menu</a>
+      </div>
+    </section>
 
-  <!-- Plats principaux -->
-  <h2>Plats principaux</h2>
-  <ul>
-    <li>
-      <strong>Poisson braisé</strong> - Poisson frais mariné puis grillé, servi avec du riz ou de l'attiéké et une sauce pimentée.
-    </li>
-    <li>
-      <strong>Riz gras</strong> - Riz cuit dans une sauce tomate épicée, accompagné de viande de poulet ou de boeuf.
-    </li>
-    <li>
-      <strong>Foutou</strong> - Purée de manioc ou d'igname servie avec une sauce d'arachide ou de gombo.
-    </li>
-  </ul>
+  <!-- Section À propos -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assets/images/restau.webp" class="img-fluid rounded" alt="Restaurant Le Gourmet Voyageur">
+        </div>
+        <div class="col-md-6">
+          <h2>À propos de nous</h2>
+          <p>Le Gourmet Voyageur est un restaurant qui vous emmène dans un voyage culinaire à travers les saveurs du monde. Nos plats sont préparés avec des ingrédients frais et locaux, et notre équipe de chefs passionnés vous garantit une expérience inoubliable.</p>
+          <a href="#menu" class="btn btn-outline-primary">Découvrir notre menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Desserts -->
-  <h2>Desserts</h2>
-  <ul>
-    <li>
-      <strong>Pâtisserie ivoirienne</strong> - Gâteaux traditionnels à base de farine, de sucre et de beurre, souvent parfumés à la noix de coco ou au chocolat.
-    </li>
-    <li>
-      <strong>Crème à la banane</strong> - Crème douce à base de banane, parfaite pour finir le repas sur une touche sucrée.
-    </li>
-    <li>
-      <strong>Bouillie de mil</strong> - Préparation sucrée à base de mil, souvent accompagnée de lait ou de sucre.
-    </li>
-  </ul>
+  <!-- Section Menu -->
+  <section id="menu" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Notre Menu</h2>
+      <div class="row">
+        <!-- Plat 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/images/sushis.jpg" class="card-img-top img-fluid" alt="Sushi Variés">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Sushi Variés</h3>
+              <p class="card-text">Assortiment de sushis frais préparés par nos chefs.</p>
+              <p class="price mt-auto">15,99 €</p>
+            </div>
+          </div>
+        </div>
+        <!-- Plat 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/images/ramen.jpg" class="card-img-top img-fluid" alt="Ramen Traditionnel">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Ramen Traditionnel</h3>
+              <p class="card-text">Ramen préparé avec un bouillon riche et des nouilles faites maison.</p>
+              <p class="price mt-auto">12,99 €</p>
+            </div>
+          </div>
+        </div>
+        <!-- Plat 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/images/tempura-crevette.jpg" class="card-img-top img-fluid" alt="Tempura de Crevettes">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Tempura de Crevettes</h3>
+              <p class="card-text">Crevettes croustillantes servies avec une sauce dip.</p>
+              <p class="price mt-auto">10,99 €</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Lien de contact -->
-  <p><a href="contact.html">Contactez-nous pour les réservations</a></p>
+  <!-- Section Chefs -->
+  <section id="chefs" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nos Chefs</h2>
+      <div class="row">
+        <!-- Chef 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/images/chef-jean.jpg" class="card-img-top" alt="Chef Jean">
+            <div class="card-body text-center">
+              <h3 class="card-title">Chef Jean</h3>
+              <p class="card-text">Spécialiste des saveurs japonaises.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Chef 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="assets/images/chef-marie.jpg" class="card-img-top" alt="Chef Marie">
+            <div class="card-body text-center">
+              <h3 class="card-title">Chef Marie</h3>
+              <p class="card-text">Experte en cuisine fusion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+ <!-- Section Avis -->
+ <section id="testimonials" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Avis Clients</h2>
+    <div class="row">
+      <!-- Avis 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 d-flex flex-column">
+          <div class="card-body d-flex flex-column">
+            <img src="assets/images/client-femme-sushis.jpg" class="rounded-circle mb-3 mx-auto" alt="Client Alice">
+            <p class="card-text">"Une expérience culinaire incroyable ! Les sushis sont les meilleurs que j'aie jamais goûtés."</p>
+            <p class="text-muted mt-auto text-end">- Alice</p>
+          </div>
+        </div>
+      </div>
+      <!-- Avis 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 d-flex flex-column">
+          <div class="card-body d-flex flex-column">
+            <img src="assets/images/client-homme-ramen.jpg" class="rounded-circle mb-3 mx-auto" alt="Client Marc">
+            <p class="card-text">"Le ramen est délicieux et le service est impeccable. Je reviendrai !"</p>
+            <p class="text-muted mt-auto text-end">- Marc</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Section Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contactez-nous</h2>
+    <div class="row g-4">
+      <!-- Formulaire de contact -->
+      <div class="col-md-6">
+        <form class="bg-white p-4 rounded shadow">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Votre nom" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Votre email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Votre message" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Informations de contact et carte -->
+      <div class="col-md-6">
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="mb-4">Nous trouver</h3>
+          <!-- Adresse -->
+          <div class="mb-3">
+            <i class="fas fa-map-marker-alt me-2"></i>
+            <span>123 Rue Gourmet, 75001 Paris, France</span>
+          </div>
+          <!-- Téléphone -->
+          <div class="mb-3">
+            <i class="fas fa-phone me-2"></i>
+            <span>+33 1 23 45 67 89</span>
+          </div>
+          <!-- Email -->
+          <div class="mb-4">
+            <i class="fas fa-envelope me-2"></i>
+            <span>contact@gourmetvoyageur.com</span>
+          </div>
+          <!-- Carte Google Maps -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.99144060821!2d2.292292615674389!3d48.85837360866178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1633023226784!5m2!1sfr!2sfr"
+              class="map-iframe"
+              allowfullscreen=""
+              loading="lazy"
+              title="Google Maps">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- À propos -->
+      <div class="col-md-4">
+        <h3 class="mb-3">Le Gourmet Voyageur</h3>
+        <p>Découvrez une expérience culinaire unique inspirée des saveurs du monde. Nous vous accueillons dans un cadre chaleureux et moderne.</p>
+      </div>
+
+      <!-- Liens utiles -->
+      <div class="col-md-2">
+        <h3 class="mb-3">Liens utiles</h3>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-white text-decoration-none">Accueil</a></li>
+          <li><a href="#about" class="text-white text-decoration-none">À propos</a></li>
+          <li><a href="#menu" class="text-white text-decoration-none">Menu</a></li>
+          <li><a href="#chefs" class="text-white text-decoration-none">Chefs</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Horaires -->
+      <div class="col-md-3">
+        <h3 class="mb-3">Horaires d'ouverture</h3>
+        <ul class="list-unstyled">
+          <li>Lundi - Vendredi : 12h - 22h</li>
+          <li>Samedi : 11h - 23h</li>
+          <li>Dimanche : 11h - 20h</li>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="col-md-3">
+        <h3 class="mb-3">Suivez-nous</h3>
+        <div class="social-links">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-4 pt-3 border-top">
+      <p class="mb-0">© 2025 Le Gourmet Voyageur. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+<script src="fontawesome/js/all.js"></script>
+  <script src="js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

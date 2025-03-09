@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agence de Voyage - Le Gourmet Voyageur</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Insérez la navbar partagée ici -->
+  </nav>
+
+  <!-- Section Hero -->
+  <section id="home" class="hero-section">
+    <div class="container text-center text-white">
+      <h1 class="display-4">Explorez le Monde</h1>
+      <p class="lead">Découvrez des destinations incroyables avec notre agence de voyage.</p>
+      <a href="#destinations" class="btn btn-primary btn-lg">Voir nos destinations</a>
+    </div>
+  </section>
+
+  <!-- Section Destinations -->
+  <section id="destinations" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Nos Destinations</h2>
+      <div class="row">
+        <!-- Destination 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/images/paris.jpg" class="card-img-top" alt="Paris">
+            <div class="card-body">
+              <h3 class="card-title">Paris</h3>
+              <p class="card-text">La ville de l'amour et des lumières.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/images/tokyo.jpg" class="card-img-top" alt="Tokyo">
+            <div class="card-body">
+              <h3 class="card-title">Tokyo</h3>
+              <p class="card-text">Découvrez la modernité et la tradition.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="assets/images/new-york.jpg" class="card-img-top" alt="New York">
+            <div class="card-body">
+              <h3 class="card-title">New York</h3>
+              <p class="card-text">La ville qui ne dort jamais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Circuits -->
+  <section id="circuits" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nos Circuits</h2>
+      <div class="accordion" id="circuitsAccordion">
+        <!-- Circuit 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Circuit Europe
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#circuitsAccordion">
+            <div class="accordion-body">
+              Découvrez les capitales européennes en 10 jours.
+              <a href="#" class="btn btn-primary mt-2">Voir les détails</a>
+            </div>
+          </div>
+        </div>
+        <!-- Circuit 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Circuit Asie
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#circuitsAccordion">
+            <div class="accordion-body">
+              Explorez les trésors de l'Asie en 15 jours.
+              <a href="#" class="btn btn-primary mt-2">Voir les détails</a>
+            </div>
+          </div>
+        </div>
+        <!-- Circuit 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Circuit Amérique
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#circuitsAccordion">
+            <div class="accordion-body">
+              Partez à l'aventure en Amérique du Nord et du Sud.
+              <a href="#" class="btn btn-primary mt-2">Voir les détails</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulaire de Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contactez-nous</h2>
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Votre nom" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Votre email" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Destination d'intérêt" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Votre message" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-0">© 2023 Agence de Voyage. Tous droits réservés.</p>
+      <div class="social-links mt-3">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
